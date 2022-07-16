@@ -1,0 +1,26 @@
+
+GET http://localhost:8000/api/post HTTP/1.1
+
+###
+
+POST http://localhost:8000/api/post HTTP/1.1
+Content-Type: application/json
+
+{
+  "name" : "MY TITLE 3",
+  "desc" : "MY DESC 3"
+}
+
+###
+
+PUT http://localhost:8000/api/post/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name" : "MY TITLE edited first",
+  "desc" : "MY DESC edited first"
+}
+
+###
+
+DELETE  http://localhost:8000/api/post/2 HTTP/1.1
